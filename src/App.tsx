@@ -1,5 +1,7 @@
 import './App.css';
 import { Container } from './Components/Container';
+import MonthYearPicker from './Components/Date';
+import MyComponent from './Components/Datec';
 import { Greet } from './Components/Greet';
 import { Heading } from './Components/Heading';
 import { Input } from './Components/Inputs';
@@ -8,6 +10,7 @@ import { Person } from './Components/Person';
 import { PersonList } from './Components/PersonList';
 import { Status } from './Components/Status';
 import { Button } from './Components/button';
+import { Counter } from './Components/state/Counter';
 import { LoggedIn } from './Components/state/LoggedIn';
 import { User } from './Components/state/User';
 
@@ -48,6 +51,8 @@ const nameList=[
       <Container styles={{border:'1px solid black', padding:'1rem'}}/>
       <LoggedIn/>
       <User/>
+      <Counter/>
+      <MyComponent/>
     </div>
   );
 }
