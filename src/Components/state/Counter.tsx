@@ -33,9 +33,11 @@ export const Counter =()=>{
         <button onClick={()=> dispatch({type: 'decrement', payload:10})}>
             decrement 10
         </button>
-        {/* <button onClick={()=> dispatch({type: 'reset'})}>
-            reset
-        </button> */}
+        {
+         //   <button onClick={()=> dispatch({type: 'reset'})}>
+          //  reset
+           // </button> 
+        }
         </>
     )
 }
