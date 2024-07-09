@@ -5,24 +5,21 @@ interface MonthYearPickerProps {
 }
 
 const MonthYearPicker: React.FC<MonthYearPickerProps> = ({ onSubmit }) => {
-  // State for selected month and year
+
   const [selectedMonth, setSelectedMonth] = useState<string>('');
   const [selectedYear, setSelectedYear] = useState<string>('');
-
-  // Function to handle month change
+  
   const handleMonthChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setSelectedMonth(event.target.value);
   };
 
-  // Function to handle year change
   const handleYearChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setSelectedYear(event.target.value);
   };
 
-  // Function to handle form submission
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Call the onSubmit prop with selectedMonth and selectedYear
+  
     onSubmit(selectedMonth, selectedYear);
   };
 
@@ -43,10 +40,10 @@ const MonthYearPicker: React.FC<MonthYearPickerProps> = ({ onSubmit }) => {
           <option value="September">September</option>
           <option value="October">October</option>
           <option value="November">November</option>
-          <option value="Desember">December</option>
-          
+          <option value="December">December</option>
         </select>
       </label>
+
       <label>
         Year:
         <select value={selectedYear} onChange={handleYearChange}>
