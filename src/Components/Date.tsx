@@ -48,6 +48,9 @@ const MonthYearPicker: React.FC<MonthYearPickerProps> = ({ onSubmit }) => {
         Year:
         <select value={selectedYear} onChange={handleYearChange}>
           <option value="">Select Year</option>
+          <option value="2013">2010</option>
+          <option value="2014">2011</option>
+          <option value="2015">2012</option>
           <option value="2013">2013</option>
           <option value="2014">2014</option>
           <option value="2015">2015</option>
